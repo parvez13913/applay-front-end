@@ -45,7 +45,7 @@ export default function NavBar() {
         {/* Desktop Get Started Button */}
         <Link
           href="/login"
-          className="hidden md:inline-flex rounded-sm bg-blue-100 px-4 py-2 text-sm font-medium text-blue-600 hover:bg-primary hover:text-white transition-colors"
+          className="hidden md:inline-flex rounded-sm bg-blue-100 px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white transition-colors"
         >
           Get Started
         </Link>
