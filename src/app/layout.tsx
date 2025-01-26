@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <FirstNavBar />
-        <NavBar />
+        <div className="sticky top-0">
+          <NavBar />
+        </div>
         {children}
       </body>
     </html>

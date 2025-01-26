@@ -51,7 +51,7 @@ export default function Pricing() {
             >
               {plan.isPopular && (
                 <div className="absolute -right-1 -top-1 z-10">
-                  <div className="inline-block rounded-br-lg rounded-tl-lg bg-blue-600 px-3 py-1 text-xs font-semibold text-white">
+                  <div className="inline-block rounded-br-lg rounded-tl-lg bg-primary px-3 py-1 text-xs font-semibold text-white">
                     Popular
                   </div>
                 </div>
@@ -78,7 +78,7 @@ export default function Pricing() {
               </ul>
 
               <div className="flex justify-center">
-                <Button className="mt-8 w-1/2 rounded-sm bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700">
+                <Button className="mt-8 w-1/2 rounded-sm bg-primary px-4 py-2 text-sm font-semibold text-white transition-colors">
                   Get Started
                 </Button>
               </div>
