@@ -1,5 +1,6 @@
 "use client";
 import Button from "../components/button";
+import Team from "../components/team";
 import Testimonials from "../components/testimonials";
 
 export default function Pricing() {
@@ -86,6 +87,7 @@ export default function Pricing() {
         </div>
       </div>
       <Testimonials />
+      <Team />
     </section>
   );
 }
