@@ -9,7 +9,7 @@ export default function Features() {
     { number: 5000, label: "Team Member" },
   ];
   return (
-    <section className="py-20">
+    <section className="pt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-white">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Left Column - Image */}
