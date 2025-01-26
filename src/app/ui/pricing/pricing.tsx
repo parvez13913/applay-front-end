@@ -1,4 +1,6 @@
+"use client";
 import Button from "../components/button";
+import Testimonials from "../components/testimonials";
 
 export default function Pricing() {
   const plans = [
@@ -30,8 +32,8 @@ export default function Pricing() {
   ];
 
   return (
-    <section className="bg-white pt-20 pb-4">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="pt-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-white pb-12">
         <div className="text-center">
           <h2 className="text-3xl font-semibold text-gray-900">Our Pricing</h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm text-gray-600">
@@ -83,6 +85,7 @@ export default function Pricing() {
           ))}
         </div>
       </div>
+      <Testimonials />
     </section>
   );
 }
