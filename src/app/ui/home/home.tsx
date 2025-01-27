@@ -7,12 +7,9 @@ export default function Home() {
   const images = ["/01.png", "/02.png", "/03.png", "/04.png", "/05.png"];
   return (
     <main>
-      <div
-        id="home"
-        className="min-h-screen bg-gradient-to-br from-blue-600 to-blue-700"
-      >
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid min-h-screen items-center gap-8 lg:grid-cols-2">
+      <div id="home" className="bg-gradient-to-br from-blue-600 to-blue-700">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid items-center justify-center gap-8 lg:grid-cols-2">
             {/* Left Column - Content */}
             <div className="pt-20 text-white lg:pt-0">
               <p className="text-sm font-normal">Plan your life</p>
@@ -36,13 +33,13 @@ export default function Home() {
             </div>
 
             {/* Right Column - Image */}
-            <div className="relative lg:h-[600px]">
+            <div>
               <Image
-                src="https://wpthemesgrid.com/themes/applay/img/hero-image.svg"
+                src="/hero-image.svg"
                 alt="Productivity illustration"
-                fill
-                className="object-contain"
-                priority
+                height={800}
+                width={800}
+                className="object-cover"
               />
             </div>
           </div>

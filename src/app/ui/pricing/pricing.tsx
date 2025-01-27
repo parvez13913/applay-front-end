@@ -1,4 +1,5 @@
 "use client";
+import { twMerge } from "tailwind-merge";
 import Button from "../components/button";
 import Team from "../components/team";
 import Testimonials from "../components/testimonials";
@@ -47,10 +48,12 @@ export default function Pricing() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className="relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+              className={twMerge(
+                "rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+              )}
             >
               {plan.isPopular && (
-                <div className="absolute -right-1 -top-1 z-10">
+                <div className="top-0">
                   <div className="inline-block rounded-br-lg rounded-tl-lg bg-primary px-3 py-1 text-xs font-semibold text-white">
                     Popular
                   </div>

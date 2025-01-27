@@ -13,13 +13,13 @@ export default function Features() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-white">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Left Column - Image */}
-          <div className="relative h-[400px] w-full">
+          <div>
             <Image
               src="/service-img1.svg"
               alt="Plan and Manage Illustration"
-              fill
-              className="object-contain"
-              priority
+              height={800}
+              width={800}
+              className="object-cover"
             />
           </div>
 
@@ -86,13 +86,13 @@ export default function Features() {
           </div>
 
           {/*  Right Column- Image */}
-          <div className="relative h-[400px] w-full">
+          <div>
             <Image
               src="/service-img2.svg"
               alt="Plan and Manage Illustration"
-              fill
-              className="object-contain"
-              priority
+              height={800}
+              width={800}
+              className="object-cover"
             />
           </div>
         </div>

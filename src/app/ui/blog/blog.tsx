@@ -54,15 +54,16 @@ export default function Blog() {
           {posts.map((post, index) => (
             <article
               key={index}
-              className="group overflow-hidden rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md"
+              className="rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md"
             >
-              <Link href={post.href} className="block">
-                <div className="relative h-64 w-full overflow-hidden">
+              <Link href={post.href}>
+                <div className="h-64 w-full">
                   <Image
                     src={post.image || "/placeholder.svg"}
                     alt={post.title}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    width={800}
+                    height={800}
+                    className="object-cover"
                   />
                 </div>
                 <div className="p-6">

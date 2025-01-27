@@ -49,7 +49,7 @@ export default function Carousel({ images, options = {} }: CarouselProps) {
         <div className="flex">
           {images.map((src, index) => (
             <div className="flex-[0_0_30%] pl-4" key={index}>
-              <div className="rounded-lg bg-white shadow-sm">
+              <div className="bg-transparent">
                 <Image
                   src={
                     src || "https://wpthemesgrid.com/themes/applay/img/02.png"
@@ -66,7 +66,7 @@ export default function Carousel({ images, options = {} }: CarouselProps) {
       </div>
 
       <button
-        className="absolute left-4 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md hover:bg-gray-100"
+        className="absolute left-4 top-1/2 z-10 -translate-y-1/2 rounded-full bg-transparent p-2 shadow-md hover:bg-gray-100"
         onClick={scrollPrev}
         aria-label="Previous slide"
       >
@@ -74,7 +74,7 @@ export default function Carousel({ images, options = {} }: CarouselProps) {
       </button>
 
       <button
-        className="absolute right-4 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md hover:bg-gray-100"
+        className="absolute right-4 top-1/2 z-10 -translate-y-1/2 rounded-full bg-transparent p-2 shadow-md hover:bg-gray-100"
         onClick={scrollNext}
         aria-label="Next slide"
       >
@@ -82,7 +82,7 @@ export default function Carousel({ images, options = {} }: CarouselProps) {
       </button>
 
       <button
-        className="absolute bottom-4 left-1/2 z-10 -translate-x-1/2 rounded-full bg-white p-2 shadow-md hover:bg-gray-100"
+        className="absolute bottom-4 left-1/2 z-10 -translate-x-1/2 rounded-full p-2 shadow-md hover:bg-gray-100"
         onClick={togglePause}
         aria-label={isPaused ? "Resume autoplay" : "Pause autoplay"}
       >

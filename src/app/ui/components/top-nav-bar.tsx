@@ -3,7 +3,7 @@
 import { Facebook, Github, Linkedin, Twitter, Video } from "lucide-react";
 import Link from "next/link";
 
-export default function FirstNavBar() {
+export default function TopNavBar() {
   return (
     <nav className="w-full border-b border-gray-200 bg-white/80 backdrop-blur-sm">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">

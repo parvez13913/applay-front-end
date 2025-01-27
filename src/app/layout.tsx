@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import FirstNavBar from "./ui/components/first-nav-bar";
 import NavBar from "./ui/components/nav-bar";
+import TopNavBar from "./ui/components/top-nav-bar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main>
-          <FirstNavBar />
+          <TopNavBar />
           <div className="sticky top-0">
             <NavBar />
           </div>
