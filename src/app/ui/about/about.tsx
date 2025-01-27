@@ -29,7 +29,7 @@ export default function About() {
   ];
 
   return (
-    <section className="bg-gray-200 py-20">
+    <section id="about" className="bg-gray-200 py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-semibold text-gray-900">

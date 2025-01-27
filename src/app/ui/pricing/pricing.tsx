@@ -33,7 +33,7 @@ export default function Pricing() {
   ];
 
   return (
-    <section className="pt-20">
+    <section id="pricing" className="pt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-white pb-12">
         <div className="text-center">
           <h2 className="text-3xl font-semibold text-gray-900">Our Pricing</h2>

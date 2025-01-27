@@ -21,7 +21,7 @@ export default function Contact() {
   };
 
   return (
-    <section>
+    <section id="contact">
       <div className="mx-auto px-4 py-8 bg-gray-200">
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold mb-2">Contact Us</h1>

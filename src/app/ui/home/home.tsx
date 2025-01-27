@@ -7,7 +7,10 @@ export default function Home() {
   const images = ["/01.png", "/02.png", "/03.png", "/04.png", "/05.png"];
   return (
     <main>
-      <div className="min-h-screen bg-gradient-to-br from-blue-600 to-blue-700">
+      <div
+        id="home"
+        className="min-h-screen bg-gradient-to-br from-blue-600 to-blue-700"
+      >
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid min-h-screen items-center gap-8 lg:grid-cols-2">
             {/* Left Column - Content */}
