@@ -43,6 +43,7 @@ export default function NavBar() {
       element.scrollIntoView({ behavior: "smooth" });
       window.history.pushState(null, "", href);
       setActiveHash(href);
+      setIsMobileMenuOpen(false); // Close mobile menu after click
     }
   };
 
@@ -113,6 +114,7 @@ export default function NavBar() {
             ))}
             <Link
               href="/login"
+              onClick={() => setIsMobileMenuOpen(false)}
               className="block px-3 py-2 rounded-md text-base font-medium bg-blue-100 text-primary hover:bg-primary hover:text-white"
             >
               Get Started
